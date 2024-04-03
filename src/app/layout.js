@@ -1,7 +1,15 @@
 import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(poppins.className, "dark:bg-neutral-950")}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
