@@ -74,3 +74,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.backgroundImg{
+  background-image: url("../../public/images/bgImg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
