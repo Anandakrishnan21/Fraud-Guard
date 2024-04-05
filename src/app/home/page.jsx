@@ -1,10 +1,15 @@
-import HomePage from '@/components/home/HomePage'
-import React from 'react'
+import HomePage from "@/components/home/HomePage";
+import { getServerSession } from "next-auth";
+import React from "react";
+import { authOptions } from "../api/auth/[...nextauth]/route";
+import { redirect } from 'next/navigation';
 
-function Homepage() {
-  return (
-    <HomePage />
-  )
+async function Homepage() {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    redirect("/login");
+  }
+  return <HomePage />;
 }
 
-export default Homepage
+export default Homepage;
