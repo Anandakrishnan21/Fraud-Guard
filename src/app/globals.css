@@ -70,14 +70,23 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.backgroundImg{
+.backgroundImg {
   background-image: url("../../public/images/bgImg.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.cardStyle {
+  @apply w-11/12 md:w-72 h-80 flex flex-col justify-between bg-neutral-50 backdrop-filter bg-opacity-20 backdrop-blur-lg rounded-lg p-2
+}
+
+.authCard {
+  @apply flex flex-col gap-4 bg-white text-black w-11/12 md:w-2/5 rounded-lg p-2 md:p-10
 }

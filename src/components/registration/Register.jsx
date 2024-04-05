@@ -54,7 +54,7 @@ function Register() {
 
   return (
     <div className="backgroundImg flex justify-center items-center">
-      <div className="flex flex-col gap-4 bg-white text-black w-11/12 md:w-2/5 rounded-lg p-2 md:p-10">
+      <div className="authCard">
         <h1 className="text-lg font-semibold">Hey, welcome to Fraud Guard</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>

@@ -1,4 +1,4 @@
-import Landing from "@/components/Landing";
+import Landing from "@/components/landingPage/Landing";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { authOptions } from "./api/auth/[...nextauth]/route";
