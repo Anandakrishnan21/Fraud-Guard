@@ -87,6 +87,6 @@
   @apply w-11/12 md:w-72 h-80 flex flex-col justify-between bg-neutral-50 backdrop-filter bg-opacity-20 backdrop-blur-lg rounded-lg p-2
 }
 
-.authCard {
+.authCard { 
   @apply flex flex-col gap-4 bg-white text-black w-11/12 md:w-2/5 rounded-lg p-4 md:p-10
 }
