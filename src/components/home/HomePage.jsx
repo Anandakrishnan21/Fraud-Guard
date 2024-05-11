@@ -12,7 +12,7 @@ function HomePage() {
       });
 
       if (res.ok) {
-        const output = await response.text();
+        const output = await res.json();
         console.log("Python program output:", output);
       }
     } catch (error) {
